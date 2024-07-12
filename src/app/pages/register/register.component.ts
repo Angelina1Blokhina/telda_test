@@ -29,8 +29,18 @@ export class RegisterComponent {
       control.setErrors(null);
     });
   }
+
+  isFormValid() {
+    return (
+      this.registerForm.valid &&
+      this.registerForm.value.login &&
+      this.registerForm.value.password &&
+      this.registerForm.value.name
+    );
+  }
+
   onSubmit() {
-    if (this.registerForm.valid) {
+    if (this.isFormValid()) {
       const user: User = {
         login: this.registerForm.value.login || '',
         password: this.registerForm.value.password || '',

@@ -11,7 +11,13 @@ import { UserService } from 'src/app/services/user.service';
 export class HomeComponent implements OnInit {
   allUsers: User[] = [];
 
-  displayedColumns: string[] = ['login', 'name', 'registrationDate', 'delete'];
+  displayedColumns: string[] = [
+    'login',
+    'name',
+    'password',
+    'registrationDate',
+    'delete',
+  ];
 
   authUser: User | null = null;
 
