@@ -1,0 +1,14 @@
+.registration-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+  }
+.registration-form-container{
+    width: 40%;
+}
+.registration-form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,16 @@
+<mat-toolbar
+  *ngIf="authUser | async as user; else notLoggedIn"
+  class="header-container"
+>
+  <span>Пользователь {{ user.name }}</span>
+  <button mat-button (click)="logOut()">Выйти</button>
+</mat-toolbar>
+
+<ng-template #notLoggedIn>
+  <mat-toolbar>
+    <a mat-tab-link routerLink="/registration" class="registration-link"
+      >Регистрация</a
+    >
+    <a mat-tab-link routerLink="/login">Авторизация</a>
+  </mat-toolbar>
+</ng-template>
