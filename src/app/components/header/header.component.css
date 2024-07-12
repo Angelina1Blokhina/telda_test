@@ -1,11 +1,11 @@
-.header-container{
-    display: flex;
-    justify-content: space-between;
+.header-container {
+  display: flex;
+  justify-content: space-between;
 }
 a {
-    text-decoration: none; 
-    color: white;
+  text-decoration: none;
+  color: white;
 }
-.registration-link{
-    margin-right: 10px;
+.registration-link {
+  margin-right: 10px;
 }

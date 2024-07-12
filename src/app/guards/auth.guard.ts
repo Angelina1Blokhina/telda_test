@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
   constructor(
@@ -18,9 +18,9 @@ export class AuthGuard implements CanActivate {
     | boolean
     | UrlTree {
     if (!this.authService.isAuthUser()) {
-      return true; 
+      return true;
     } else {
-      return this.router.parseUrl('/home'); 
+      return this.router.parseUrl('/home');
     }
   }
 }
