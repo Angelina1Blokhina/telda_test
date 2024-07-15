@@ -1,27 +1,24 @@
 # TeldaTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+Angular 16.2.14, TS, CSS, Angular Material
 
-## Development server
+## Требования
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+•	Создать страницу Регистрации и Авторизации;
 
-## Code scaffolding
+•	Произвести регистрацию пользователя (или нескольких пользователей);
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+•	Информация о пользователе: логин, пароль, имя, дата регистрации
 
-## Build
+•	Для хранения данных о пользователях использовать веб хранилище или любой Free REST API сервис;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+•	Авторизоваться под одной из ранее зарегистрированных записей;
 
-## Running unit tests
+•	После успешной Авторизации должен осуществляться переход на страницу Home;
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+•	На странице Home должен отображаться Имя пользователя и кнопка для возврата на страницу Авторизации;
 
-## Running end-to-end tests
+•	На странице Home отобразить таблицу всех зарегистрированных пользователей с возможностью их удаления (кроме текущего пользователя). Отображать всю информацию по пользователям;
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
